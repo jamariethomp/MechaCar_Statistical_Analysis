@@ -18,24 +18,24 @@ According to the variance information for each individual lot, however, only two
 
 ## 3. T-Tests on Suspension Coils
 
-In our t-test capturing PSI data across all lots, we find that our p-value, at 0.06028, is above our significance level and does not demonstrate sufficient evidence that the two means being tested are similar:
+In our t-test capturing PSI data across all lots, we find that our p-value, at 0.06028, is above our significance level and does not demonstrate sufficient evidence that the two means being tested are different:
 
 ![Screenshot 2022-04-02 143327](https://user-images.githubusercontent.com/94264643/161400269-80348d51-ee11-4238-9d44-f0b02b8e083a.png)
 
 This helps us to deduce that the mean of the PSI values in the population distribution and the mean of the PSI values in the sample distribution are statistically similar.
 
-Here, we test the statistical comparison of PSI values in each lot to that of the PSI values in the population distribution:
+Here, we use the p-value to test the PSI values in each individual lot to that of the PSI values in the population distribution:
 
 ![Screenshot 2022-04-02 132743](https://user-images.githubusercontent.com/94264643/161398284-507a8fed-0e05-41e4-b939-747b3c55a57b.png)
 
-The p-values for lots 1 and 2 are greater than 0.05, thus the data sets do not represent statistically different PSI means from the PSI mean of the population distribution data. The p-value of lot 3, however, is slightly lower than 0.05, which indicates a statistically different PSI mean.
+The p-values for Lots 1 and 2 are greater than 0.05, thus the data sets do not represent statistically different PSI means from the PSI mean of the population distribution data. The p-value of lot 3, however, is slightly lower than 0.05, which indicates a statistically different PSI mean.
 
 ## 4. Study Design: MechaCar vs Competition
 
-To evaluate some defining differences between the products made by MechaCar and it's competitors, a statisical study could help highlight some features that might make or break a consumer's decision when considering buying from MechaCar. Cost, safety ratings, and fuel efficiency are three compelling factors that car-buyers consider when purhchasing. 
+To evaluate some defining differences between the products made by MechaCar and those of its competitors, a statisical study could help highlight some features that might make or break a consumer's decision when considering buying from MechaCar. Cost, safety ratings, and fuel efficiency are three compelling factors that car-buyers consider when purhchasing. 
 
-A lack of statistical differences between these characteristics would indicate a null hypothesis that that competitors do not necessarily offer more or less attractive characteristics than those of MechaCar; an alternative hypothesis would indicate a significant statistical difference in one or more of these characteristics between MechaCare and its competitors, in which case the null hypothesis would be rejected.
+A lack of statistical differences between these characteristics would indicate a null hypothesis that that competitors do not necessarily offer more or less attractive features than those of MechaCar; an alternative hypothesis would indicate a significant statistical difference in one or more of these characteristics between MechaCare and its competitors, in which case the null hypothesis would be rejected.
 
-To test the hypothesis, a t-test can be performed to test the differences between the average mean of each characteristic to identify significant differences. A t-test is often best used for such comparisons.
+To test the hypothesis, a t-test can be performed to identify the differences between the average mean of each characteristic. A t-test is often best used for such comparisons.
 
 In order to run the statsitical test, numerical data would need to be collected from MechaCar and whatever competitors MechaCar is being compared against. This would include cost, saftey ratings, and fuel efficiency ratings.
