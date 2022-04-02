@@ -8,7 +8,6 @@ mecha_summary <- summary(mecha_lm)
 Suspension <- read.csv(file='Suspension_Coil.csv',check.names=F,stringsAsFactors = F)
 
 total_summary <- Suspension %>% summarize(Mean_PSI=mean(PSI),Median_PSI=median(PSI),Variance=var(PSI),Standard_Deviation=sd(PSI), .groups = 'keep')
-
 lot_summary <- Suspension %>% group_by(Manufacturing_Lot) %>% summarize(Mean_PSI=mean(PSI),Median_PSI=median(PSI),Variance=var(PSI),Standard_Deviation=sd(PSI), .groups = 'keep')
 
 t.test(Suspension[['PSI']],mu=1500)
